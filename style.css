@@ -1,0 +1,159 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #191919;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #f3eeee;
+    font-size: 2.2em;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    background: #4e4848;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.form input,
+.form select,
+.form textarea,
+.form button {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.form textarea {
+    grid-column: span 2;
+    resize: vertical;
+}
+
+.form button {
+    grid-column: span 2;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form button:hover {
+    background: #0056b3;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filters select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    color: #fff;
+    background: #2b2626;
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+    margin: 0 0 10px;
+    font-size: 1.2em;
+}
+
+.tag {
+    font-size: 12px;
+    background: #007bff;
+    color: #fff;
+    padding: 2px 6px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.card button {
+    padding: 5px 10px;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 8px;
+    margin-right: 5px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.card button:hover {
+    opacity: 0.8;
+}
+
+.card .progress-container {
+    background: #e1cbcb;
+    border-radius: 8px;
+    height: 12px;
+    width: 100%;
+    margin-top: 5px;
+    overflow: hidden;
+}
+
+.card .progress-bar {
+    background: #28a745;
+    height: 100%;
+    width: 0%;
+    transition: width 0.3s ease;
+}
+
+@media(max-width: 600px) {
+    .form {
+        grid-template-columns: 1fr;
+    }
+}
+.refresh {
+  margin-left: 10px;
+  padding: 6px 12px;
+  border: none;
+  background: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.refresh:hover {
+  background: #0056b3;
+}

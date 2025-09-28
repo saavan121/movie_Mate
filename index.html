@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie & TV Collection</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🍿 🎥 Movie Mate 🎥 🍿</h1>
+
+    <form id="itemForm" class="form">
+      <input type="text" id="title" placeholder="Title" required>
+      <input type="text" id="director" placeholder="Director">
+      <input type="text" id="genre" placeholder="Genre">
+      <input type="text" id="platform" placeholder="Platform (e.g., Netflix)">
+      
+      <select id="type">
+        <option value="movie">Movie</option>
+        <option value="tv">TV Show</option>
+      </select>
+
+      <input type="number" id="episodesTotal" placeholder="Total Episodes" min="0">
+      
+      <select id="status">
+        <option value="watching">Watching</option>
+        <option value="completed">Completed</option>
+        <option value="wishlist">Wishlist</option>
+      </select>
+
+      <textarea id="review" placeholder="Your review..."></textarea>
+      <input type="number" id="rating" placeholder="Rating (1-5)" min="1" max="5">
+
+      <button type="submit">Add</button>
+    </form>
+
+    <div class="filters">
+      <select id="filterGenre">
+        <option value="">All Genres</option>
+      </select>
+      <select id="filterPlatform">
+        <option value="">All Platforms</option>
+      </select>
+      <select id="filterStatus">
+        <option value="">All Status</option>
+        <option value="watching">Watching</option>
+        <option value="completed">Completed</option>
+        <option value="wishlist">Wishlist</option>
+      </select>
+      <button id="refreshBtn" class="refresh">Refresh</button>
+    </div>
+
+    <div id="list" class="list"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
